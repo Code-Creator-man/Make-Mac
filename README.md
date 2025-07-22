@@ -1,4 +1,4 @@
-<h1 align="center"> WhiteSur GTK Theme </h1>
+<h1 align="center"> MakeMac GTK Theme </h1>
 <p align="center"> <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/macbook.png"/> </p>
 
 <br>
@@ -363,26 +363,110 @@ Parameter: `--flatpak` `-F`
 
 Example: `./tweaks.sh -F`
 
-## <p align="center"> <b> Other recommended stuff </b> </p>
-### <p align="center"> <b> WhiteSur Icon Theme </b> </p>
-<p align="center"> <a href="https://github.com/vinceliuice/WhiteSur-icon-theme">
-  <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/icon-theme.png"/>
-</a> </p>
+## <p align="center"> <b> And the ICon pack installation </b> </p>
+### <p align="center"> <b> MakeMac Icon Theme </b> </p>
+<img src="logo.png" alt="Logo" align="right" /> WhiteSur Icon Theme
+======
+
+MacOS Big Sur like icon theme for linux desktops
+
+### Donate
+
+If you like my project, you can buy me a coffee:
+
+<span class="paypal"><a href="https://www.paypal.me/vinceliuice" title="Donate to this project using Paypal"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal donate button" /></a></span>
+
+## Install tips
+
+Usage:  `./install.sh`  **[OPTIONS...]**
+
+|  OPTIONS:           | |
+|:--------------------|:-------------|
+|-d, --dest           | Specify theme destination directory (Default: $HOME/.local/share/icons)|
+|-n, --name           | Specify theme name (Default: WhiteSur)|
+|-t, --theme          | Specify theme color variant(s) [default/purple/pink/red/orange/yellow/green/grey/all] (Default: blue)|
+|-a, --alternative    | Install alternative icons (redesigned MacOS default icons)|
+|-b, --bold           | Install bold panel icons version|
+|-r,--remove,-u,--uninstall | Uninstall (remove) icon themes|
+|-h, --help           | Show this help|
+
+> **Note for snaps:** To use these icons with snaps, the best way is to make a copy of the application's .desktop located in `/var/lib/snapd/desktop/applications/name-of-the-snap-application.desktop` into `$HOME/.local/share/applications/`. Then use any text editor and change the "Icon=" to "Icon=name-of-the-icon.svg"
+
+> For more information, run: `./install.sh --help`
+
+![alt](alt-version.png?raw=true)
+
+![bold](bold-size.png?raw=true)
+
+> Bold version suggested use in `High resolution display` like 4k display with 200% scale!
+
+## Requirement
+You can use this with:
+
+### GTK theme
+
+WhiteSur-gtk-theme: https://github.com/vinceliuice/WhiteSur-gtk-theme
+
+### KDE theme
+
+WhiteSur-kde: https://github.com/vinceliuice/WhiteSur-kde
+
+## Preview
+![1](preview.png)
+![2](preview01.png)
+
 <br>
 <p align="center"> <a href="https://github.com/vinceliuice/WhiteSur-icon-theme">
   <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/download-button.svg"/>
 </a> </p>
 <br>
 
-### <p align="center"> <b> WhiteSur Wallpapers </b> </p>
-<p align="center"> <a href="https://github.com/vinceliuice/WhiteSur-wallpapers">
-  <img class="image" src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/wallpaper.gif"/>
-</a> </p>
-<br>
-<p align="center"> <a href="https://github.com/vinceliuice/WhiteSur-wallpapers">
-  <img src="https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/pictures/pictures/download-button.svg"/>
-</a> </p>
-<br>
+### <p align="center"> <b> MakeMac Wallpapers </b> </p>
+## Installation
+### Install Gnome Backgrounds (wallpaper will change according to time)
+
+```sh
+sudo ./install-gnome-backgrounds.sh
+```
+
+> Options:
+
+```
+  -t, --theme VARIANT     Specify theme variant(s) [whitesur|monterey|ventura] (Default: All variants)s)
+  -s, --screen VARIANT    Specify screen variant [1080p|2k|4k] (Default: 4k)
+  -u, --uninstall         Uninstall wallpappers
+  -h, --help              Show help
+```
+
+### Install Normal Wallpapers
+
+```sh
+./install-wallpapers.sh
+```
+
+> Options:
+
+```
+  -t, --theme VARIANT     Specify theme variant(s) [whitesur|monterey|ventura] (Default: All variants)s)
+  -c, --color VARIANT     Specify color variant(s) [night|light|dark] (Default: All variants)s)
+  -s, --screen VARIANT    Specify screen variant [1080p|2k|4k] (Default: 4k)
+  -n, --nord VARIANT      Specify Nord color variant(s)
+  -u, --uninstall         Uninstall wallpappers
+  -h, --help              Show help
+```
+
+## Ventura Wallpapers
+![preview](preview-ventura.png)
+
+## Monterey Wallpapers
+![preview](preview-monterey.png)
+
+## MakeMac (Big Sur) Wallpapers
+![preview](preview-whitesur.png)
+
+## Nord Wallpapers
+![preview](preview-nord.png)
+
 
 ## Technical details and getting involved
 Please go read [CONTRIBUTING.md](.github/CONTRIBUTING.md) for more info
